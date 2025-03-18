@@ -1,7 +1,71 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <body>
-      <h1>测试</h1>
-      <p>欢迎</p>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ZSI桢春依梦 - 服务器状态</title>
+        <meta name="description" content="这里可以看服务器的状态哦~">
+        <meta name="StarDust_26" content="ZSI桢春依梦">
+        <meta name="robots" content="noindex">
+        <meta http-equiv="pragma" content="no-cache">
+        <meat http-equiv="Cache-Control" content="no-cache, must-revalidate">
+        <meat http-equiv="expires" content="0">
+        <link rel="stylesheet" href="res/css/styles.css?v2.0">
+		<script src="res/js/header.js?v1.0"></script>
+        <script src="res/js/reload.js?v1.0"></script>
+		<script src="res/js/status.js?v1.0"></script>
+		<script src="res/js/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="status">
+            <h1 id="name"></h1>
+            <h2>基本信息</h2>
+            <table id="basicInfo">
+                <thead>
+                    <tr>
+                        <th>信息</th>
+                        <th>详情</th>
+                    </tr>
+                </thead>
+        
+                <tr>
+                    <td>服务器版本</td>
+                    <td id="version"></td>
+                </tr>
+
+                <tr>
+                    <td>服务器状态</td>
+                    <td id="status"></td>
+                </tr>
+                <tr>
+                    <td>最大玩家数</td>
+                    <td id="maxPlayers"></td>
+                </tr>
+                <tr>
+                    <td>当前在线玩家数</td>
+                    <td id="onlinePlayers"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="status">
+            <h2>在线玩家列表</h2>
+            <table id="playersList">
+                    <tr>
+                        <th>序号</th>
+                        <th>头像</th>
+                        <th>玩家 ID</th>
+                        <th>玩家名称</th>
+                    </tr>
+                    <tbody id="Online_players_list"></tbody>
+            </table>
+        </div>
+            
+        <div class="footer">
+            <div>
+                
+            </div>
+        </div>
+    </body>
 </html>
